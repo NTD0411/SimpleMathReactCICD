@@ -1,4 +1,4 @@
-[![Build, Test, and Deploy](https://github.com/NTD0411/SimpleMathReactCICD/actions/workflows/CICD.yml/badge.svg)](https://github.com/NTD0411/SimpleMathReactCICD/actions/workflows/CICD.yml)
+![Build, Test, and Deploy](https://github.com/NTD0411/SimpleMathReactCICD/actions/workflows/ci.yml/badge.svg?branch=main)
 # Ứng dụng React: Phép Toán Cơ Bản
 
 Math Operations là một ứng dụng web đơn giản được xây dựng bằng React, cho phép người dùng thực hiện các phép toán số học cơ bản như cộng, trừ, nhân và chia.
