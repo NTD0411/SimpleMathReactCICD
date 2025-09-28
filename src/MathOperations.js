@@ -7,7 +7,6 @@ function MathOperations() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');
   const [result, setResult] = useState('');
-  const [operation, setOperation] = useState('');
 
   // Math operation functions
   const performOperation = (op) => {
@@ -23,15 +22,12 @@ function MathOperations() {
     switch(op) {
       case '+':
         res = n1 + n2;
-        setOperation('+');
         break;
       case '-':
         res = n1 - n2;
-        setOperation('-');
         break;
       case '*':
         res = n1 * n2;
-        setOperation('×');
         break;
       case '/':
         if (n2 === 0) {
@@ -39,7 +35,6 @@ function MathOperations() {
           return;
         }
         res = n1 / n2;
-        setOperation('÷');
         break;
       default:
         return;
@@ -52,7 +47,6 @@ function MathOperations() {
     setNum1('');
     setNum2('');
     setResult('');
-    setOperation('');
   };
 
   // Render the component
