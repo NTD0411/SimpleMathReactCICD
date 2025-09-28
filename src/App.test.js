@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders Math Operations heading', () => {
   render(<App />);
-  const headingElement = screen.getByText(/Math Operations/i);
+  const headingElement = screen.getByText(/🧮 Math Calculator/i);
   expect(headingElement).toBeInTheDocument();
 });

@@ -12,7 +12,7 @@ test('performs addition correctly', () => {
   fireEvent.change(inputs[1], { target: { value: '3' } });
   fireEvent.click(addButton);
   
-  expect(screen.getByText('Result: 8')).toBeInTheDocument();
+  expect(screen.getByText('8')).toBeInTheDocument();
 });
 
 test('performs subtraction correctly', () => {
@@ -25,7 +25,7 @@ test('performs subtraction correctly', () => {
   fireEvent.change(inputs[1], { target: { value: '4' } });
   fireEvent.click(subtractButton);
   
-  expect(screen.getByText('Result: 6')).toBeInTheDocument();
+  expect(screen.getByText('6')).toBeInTheDocument();
 });
 
 test('performs multiplication correctly', () => {
@@ -38,7 +38,7 @@ test('performs multiplication correctly', () => {
   fireEvent.change(inputs[1], { target: { value: '7' } });
   fireEvent.click(multiplyButton);
   
-  expect(screen.getByText('Result: 42')).toBeInTheDocument();
+  expect(screen.getByText('42')).toBeInTheDocument();
 });
 
 test('performs division correctly', () => {
@@ -51,7 +51,7 @@ test('performs division correctly', () => {
   fireEvent.change(inputs[1], { target: { value: '3' } });
   fireEvent.click(divideButton);
   
-  expect(screen.getByText('Result: 5')).toBeInTheDocument();
+  expect(screen.getByText('5')).toBeInTheDocument();
 });
 
 test('handles division by zero', () => {
@@ -64,5 +64,5 @@ test('handles division by zero', () => {
   fireEvent.change(inputs[1], { target: { value: '0' } });
   fireEvent.click(divideButton);
   
-  expect(screen.getByText('Result: Error: Division by zero')).toBeInTheDocument();
+  expect(screen.getByText('Cannot divide by zero')).toBeInTheDocument();
 });
